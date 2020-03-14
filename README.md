@@ -1,6 +1,6 @@
 # Code-Problem-Practice 
 
-Recoding my coding practice routine :rocket:
+Recording my coding practice routine :rocket:
 
 ### 2020.3.14
 
@@ -19,3 +19,10 @@ leetcode: `tree`
   - First, could be solved by a inorder traversal (only two nodes are swapped)
   - Second, a very interesting way to solve by `Morris Traversal`. Look at [this website](https://www.cnblogs.com/AnnieKim/archive/2013/06/15/morristraversal.html) and [this discussion](https://leetcode.com/problems/recover-binary-search-tree/discuss/32559/Detail-Explain-about-How-Morris-Traversal-Finds-two-Incorrect-Pointer).
 
+leetcode: `linked list`
+
+- 206 Reverse Linked List
+  - Iterative: dummy node
+  - recursive: straight-forward
+- 92 Reverse Linked List II
+  - iterative: dummy node
