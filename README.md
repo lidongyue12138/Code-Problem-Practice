@@ -2,6 +2,19 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.3.17
+
+leetcode: `tree`
+
+- 99 Binary Tree Right Side View: `Depth-first Search` `Breadth-First Search`
+  - postorder search and only record first one of the level
+- 111 Minimum Depth of Binary Tree: `Depth-first Search` `Breadth-First Search`
+- 112 Path Sum: `Depth-first Search` `Breadth-First Search`
+- 103 Binary Tree Zigzag Level Order Traversal: `Depth-first Search` `Breadth-First Search`
+  - use deque
+- 94 Binary Tree Inorder Traversal
+- 113 Path Sum II: `Depth-first Search` `Breadth-First Search`
+
 ### 2020.3.14
 
 leetcode: `tree`
