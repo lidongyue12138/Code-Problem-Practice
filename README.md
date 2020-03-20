@@ -2,6 +2,22 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.3.20
+
+leetcode: `Dynamic Programming`
+
+- 198 House Robber:
+  - O(1) space implementation
+- 213 House Robber II:
+  - Two way House Robber
+- 132 Palindrome Partition:
+  - Record isPalindrome and partition number
+  - prune cases: expand out from current letter
+- 62 Unique Path:
+  - O(n) space implementation
+- 63 Unique Path II:
+  - Similar implementation: watch out for the corner case
+
 ### 2020.3.17
 
 leetcode: `tree`
