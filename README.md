@@ -2,6 +2,32 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.3.24
+
+leetcode: `Dynamic Programming`
+
+- 332 Coin Change
+  - Dynamic Programming
+  - DFS search (pruning out unnecessary situations): much faster :star:
+- 413 Arithmetic Slices
+- 221 Maximal Square :star:
+  - brute force search (my solution)
+  - Dynamic Programming
+- 64 Minimum Path Sum :star:
+- 85 Maximal Rectangle :star:
+  - similar to 221 (but solution is totally different)
+  - similar to 84: histogram square
+- 85 Maximal Rectangle :star:
+  - Search left and right
+  - use stack :star:
+- 70 Climbing Stairs
+  - `Fibonacci array`
+- 53 Maximum Subarray :star:
+  - classical subarray sum problem: O(n) time, O(1) space
+- 121 Best Time to Buy and Sell Stock :star:
+  - transform to 53 problem
+  - intuitive solution: record minimum price
+
 ### 2020.3.20
 
 leetcode: `Dynamic Programming`
