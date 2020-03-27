@@ -2,6 +2,53 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.3.27
+
+leetcode: `Linked List`
+
+- [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
+
+  - iterative solution: base solution
+
+    ```c++
+    cur->next = (l1) ? l1:l2;
+    ```
+
+  - recursive solution
+
+- [86. Partition List](https://leetcode.com/problems/partition-list)
+
+  - Two pointer approach: simple and intuitive
+  - my own solution: first submission (complicated thought)
+
+- [109. Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree)
+
+  - Recursion:
+    - two pointer approach for finding out the middle element of a linked list :star:
+  - Recursion + Conversion to Array :star:
+  - Inorder Simulation
+
+- [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)
+
+  - classical swap problem: use dummy node
+
+- [143. Reorder List](https://leetcode.com/problems/reorder-list) 
+
+  - logic == 206 + 92 
+
+- [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) :star:
+
+  standard code block
+
+  ```C++
+  ListNode *tmp = pre->next;
+  pre->next = cur->next;
+  cur->next = cur->next->next;
+  pre->next->next = tmp;
+  ```
+
+- [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) :star:
+
 ### 2020.3.24
 
 leetcode: `Dynamic Programming`
