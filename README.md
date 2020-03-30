@@ -2,6 +2,32 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.3.30
+
+leetcode: `Linked List`
+
+- [61. Rotate List](https://leetcode.com/problems/rotate-list)
+
+  - Find the tail and reconnect
+  - Use the circle list
+
+- [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group)
+
+  - Reverse Node classical code block (use frequently)
+
+    ```Python
+    # Not using dummy node
+    prev, cur, nxt = None, head, head
+    while cur:
+        nxt = cur.next
+        cur.next = prev
+        prev = cur
+        cur = nxt
+    return prev    
+    ```
+
+  - recursive solution
+
 ### 2020.3.27
 
 leetcode: `Linked List`
