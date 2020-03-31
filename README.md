@@ -2,6 +2,101 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.3.31
+
+leetcode: `Linked List`
+
+- [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers)
+
+  - Linked List add two number
+
+- [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) :star:
+
+  - Construct on merge two sorted list
+
+  - Merge two adjacent lists every iteration
+
+    ```
+    I agree with @cqnkxy.
+    
+    During 1st iteration, we merge two lists(every list is N) into one, this will make K down to K / 2.
+    
+    During 2nd iteration, we merge two lists(every list is 2N) into one, this will make K / 2 down to k /4.
+    
+    During 3rd iteration, we merge two lists(every list is 4N) into one, this will make K / 4 down to k /8.
+    
+    And so forth...
+    
+    I think when we merge two lists, the complexity is O(list1.length) + O(list2.length).
+    
+    So the total complexity is:
+    
+    (2N) * (K / 2) + 
+    (4N) * (K / 4) + 
+    (8N) * (K / 8) + 
+    .............. + 
+    (2^logK*N) * (K / (2 ^logK)) 
+    
+    = logK*KN
+    ```
+
+  - Priority-queue or Heap
+
+    - priority_queue<Type, Container, Functional> 
+
+      default Functional is < 
+
+      ```C++
+      struct compare {
+          bool operator()(const ListNode* l, const ListNode* r) {
+              return l->val > r->val; // output minimum one
+          }
+      };
+      ```
+
+    - Heap in C++: Maximum Heap
+
+      ```C++
+      static bool heapComp(ListNode* a, ListNode* b) {
+              return a->val > b->val;
+      }
+      ```
+
+    - [Heap in C++ STL | make_heap(), push_heap(), pop_heap(), sort_heap(), is_heap, is_heap_until()](https://www.geeksforgeeks.org/heap-using-stl-c/)
+
+- [1171. Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list) :star:
+
+  - **Intuition**
+
+      ```
+      Assume the input is an array.
+      Do you know how to solve it?
+      Scan from the left, and calculate the prefix sum.
+      Whenever meet the seen prefix,
+      remove all elements of the subarray between them.
+      ```
+      
+      ![image](https://assets.leetcode.com/users/hamlet_fiis/image_1566705933.png)
+      
+      ![image](https://assets.leetcode.com/users/hamlet_fiis/image_1566705946.png)
+
+- [817. Linked List Components](https://leetcode.com/problems/linked-list-components)
+
+  - use set or list to record appearance
+
+    ```C++
+    unordered_set<int> setG (G.begin(), G.end());
+    
+    ... setG.count(head->val) ... // appearance
+    ... setG.erase(...) ... // delete
+    ```
+
+- [445. Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)
+
+  - If no reverse: stack:star:
+
+- [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list)
+
 ### 2020.3.30
 
 leetcode: `Linked List`
