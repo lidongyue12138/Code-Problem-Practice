@@ -2,6 +2,36 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.4.4
+
+leetcode: `daily challenge`
+
+- [283. Move Zeroes](https://leetcode.com/problems/move-zeroes)
+  - scan once, move non-zero to the front
+
+leetcode: `graph`
+
+- [133. Clone Graph](https://leetcode.com/problems/clone-graph)
+  - learn to write BFS/DFS to traverse a graph
+  - In this problem, **avoid copying the same node for multiple times** (mapping from an original node to its copy)
+- [207. Course Schedule](https://leetcode.com/problems/course-schedule)
+  - **topological sort** to detect circle, we first transform it to the adjacency-list representation. 
+- [289. Game of Life](https://leetcode.com/problems/game-of-life) :star:
+  - Simulation problem
+  - In place solution: use 2nd-bit as change number (genius)
+
+### 2020.4.3
+
+leetcode: `daily challenge`
+
+- [136. Single Number](https://leetcode.com/problems/single-number)
+  - O(n) solution use XOR
+
+- [202. Happy Number](https://leetcode.com/problems/happy-number)
+  - Floyd Cycle detection algorithm
+  - Use set to detect cycle
+- [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)
+
 ### 2020.3.31
 
 leetcode: `Linked List`
