@@ -2,6 +2,15 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.4.11
+
+leetcode: `array`
+
+- [55. Jump Game](https://leetcode.com/problems/jump-game): 
+  - Record maximum reach of jump
+- [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water)
+  - Two pointer: how to traverse all possible feasible solutions? (Pruning)
+
 ### 2020.4.4
 
 leetcode: `daily challenge`
