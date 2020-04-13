@@ -2,6 +2,20 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.4.12
+
+leetcode: `array`
+
+- [18. 4Sum](https://leetcode.com/problems/4sum)
+  - attention on how to eliminate repeated one
+  - fast 2-pointer to solve 2-sum, and recursion to reduce the N-sum to 2-sum
+- [169. Majority Element](https://leetcode.com/problems/majority-element) 
+  - [this solution collection](https://leetcode.com/problems/majority-element/discuss/51612/C%2B%2B-6-Solutions) 
+  - Hash Table
+  - Sort
+  - Moore Voting Algorithm:star:
+  - Bit Manipulation
+
 ### 2020.4.11
 
 leetcode: `array`
