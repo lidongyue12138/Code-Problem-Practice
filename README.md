@@ -2,6 +2,33 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.4.14
+
+leetcode: `array`
+
+- [1. Two Sum](https://leetcode.com/problems/two-sum)
+  - Hash Map: record indexes:star:
+  - Sorted two-sum search problem (more complex)
+- [15. 3Sum](https://leetcode.com/problems/3sum) :star:
+  - Classic
+  - Sort + Decompose to two sum problem
+- [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest)
+  - Similar to 15
+  - Add conditional codes for a few specific cases (faster).
+- [923. 3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity)
+  - Hash map
+
+leetcode: `backtracking`
+
+- [77. Combinations](https://leetcode.com/problems/combinations)
+  - iterative
+  - recursive
+  - backtrack
+- [78. Subsets](https://leetcode.com/problems/subsets)
+  - recursive
+  - iterative
+  - bit manipulation
+
 ### 2020.4.12
 
 leetcode: `array`
