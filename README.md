@@ -2,6 +2,21 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.4.23
+
+leetcode: `array` `Binary Search`
+
+- [704. Binary Search](https://leetcode.com/problems/binary-search)
+  - Typical Solution
+  - Difference of `l < r` and `l <= r`
+    - first should be right open interval
+    - second should be right closed interval
+
+- [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)
+  - Find the smallest one
+  - Perform normal binary search
+- 
+
 ### 2020.4.14
 
 leetcode: `array`
