@@ -15,7 +15,8 @@ leetcode: `array` `Binary Search`
 - [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)
   - Find the smallest one
   - Perform normal binary search
-- 
+- [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)
+  - Handle special condition where `nums[left] == nums[mid]`
 
 ### 2020.4.14
 
