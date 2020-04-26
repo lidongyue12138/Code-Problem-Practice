@@ -2,6 +2,79 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.4.26
+
+leetcode: `Binary Search`
+
+- [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays):star:
+
+  - Binary Search: median number index property
+    - Search in the short array
+    - edge cases solved by adding imaginary nodes (smart)
+
+- [35. Search Insert Position](https://leetcode.com/problems/search-insert-position)
+
+  - Easy binary search problem
+
+    ```
+    if (nums[mid] >= target) hi = mid;
+    else lo = mid + 1;
+    ```
+
+- [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)
+
+  - Binary search for the left and right boundary (2 pass) :star: (a trick to make mid bias to the right)
+  - Another way to search right bound: search left bound for `target + 1`
+
+- [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target)
+
+  - Find right bound
+
+- [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)
+
+  - Remember:
+
+    ```c++
+    int findMin(vector<int>& nums) {
+            int lo = 0, hi = nums.size() - 1, mid;
+            
+            while (lo < hi) {
+                mid = (lo + hi) >> 1;
+                
+                if (nums[mid] > nums[hi]) lo = mid + 1; // compare with right one
+                else hi = mid; 
+            }
+            return nums[lo];
+        }
+    ```
+
+  - Another way
+
+    ```C++
+    int findMin(vector<int> &num) {
+            int start=0,end=num.size()-1;
+            
+            while (start<end) {
+                if (num[start]<num[end])
+                    return num[start];
+                
+                int mid = (start+end)/2;
+                
+                if (num[mid]>=num[start]) {
+                    start = mid+1;
+                } else {
+                    end = mid;
+                }
+            }
+            
+            return num[start];
+        }
+    ```
+
+- [162. Find Peak Element](https://leetcode.com/problems/find-peak-element)
+  - find the peak only on its right elements( cut the array to half)
+  - Tricky one: because search we can always get a solution by searching the local maximum side
+
 ### 2020.4.23
 
 leetcode: `array` `Binary Search`
@@ -12,7 +85,7 @@ leetcode: `array` `Binary Search`
     - first should be right open interval
     - second should be right closed interval
 
-- [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)
+- [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) :star:
   - Find the smallest one
   - Perform normal binary search
 - [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)
