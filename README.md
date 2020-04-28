@@ -2,6 +2,42 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.4.28
+
+leetcode: `Binary Search`
+
+- [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)
+
+  - Don't treat it as a 2D matrix, just treat it as a sorted list
+
+- [981. Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store)
+
+  - This is new. We need to write a class first.
+  - Hash map + map: lower_bound
+  - Use binary search :star:
+
+- [50. Pow(x, n)](https://leetcode.com/problems/powx-n) :star:
+
+  - Watch out for processing `n<0`
+
+    ```
+    double myPow(double x, int n) {
+        if (n==0) return 1;
+        if (n<0) return 1/x * myPow(1/x, -(n+1));
+        return (n%2) ? myPow(x*x, n/2)*x:myPow(x*x, n/2);
+    }
+    ```
+
+  - Bit manipulation
+
+- [69. Sqrt(x)](https://leetcode.com/problems/sqrtx)
+
+  - Newton's method: 
+
+    ![{x}_{{k+1}}={\frac  {1}{2}}\left(x_{k}+{\frac  {n}{x_{k}}}\right),\quad k\geq 0,\quad x_{0}>0.](https://wikimedia.org/api/rest_v1/media/math/render/svg/6c5fdaf147463d73eb69b6a9d85d97b2e1d9a6ce)
+
+  - Binary search: watch out for edge cases (fastest)
+
 ### 2020.4.26
 
 leetcode: `Binary Search`
@@ -21,7 +57,7 @@ leetcode: `Binary Search`
     else lo = mid + 1;
     ```
 
-- [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)
+- [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) 
 
   - Binary search for the left and right boundary (2 pass) :star: (a trick to make mid bias to the right)
   - Another way to search right bound: search left bound for `target + 1`
