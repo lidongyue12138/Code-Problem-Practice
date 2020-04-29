@@ -2,6 +2,18 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.4.29
+
+leetcode: `math`
+
+- [268. Missing Number](https://leetcode.com/problems/missing-number)
+  - XOR'ing a number by itself results in 0
+  - XOR is commutative and associative
+- [273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words)
+- [1073. Adding Two Negabinary Numbers](https://leetcode.com/problems/adding-two-negabinary-numbers):star:
+  - Interesting! 
+  - Change from add from binary numbers 
+
 ### 2020.4.28
 
 leetcode: `Binary Search`
