@@ -2,6 +2,19 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.5.3
+
+- [462. Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii)
+  - Choose the median: [rigorous proof](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/discuss/94951/3-line-C%2B%2B-solution-with-rigorous-math-proof-(same-as-problem-%22Best-Meeting-Point%22))
+  - Replace sort: use quickSelect finding kth largest element.
+- [670. Maximum Swap](https://leetcode.com/problems/maximum-swap)
+  - One pass from tail to head
+- [343. Integer Break](https://leetcode.com/problems/integer-break) :star:
+  - [Why factor 2 or 3? The math behind this problem.](https://leetcode.com/problems/integer-break/discuss/80721/Why-factor-2-or-3-The-math-behind-this-problem.) 
+- [368. Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset)
+  - Dynamic Programming
+  - From least to most, iteratively solve by map
+
 ### 2020.4.29
 
 leetcode: `math`
