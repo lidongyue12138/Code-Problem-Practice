@@ -2,6 +2,47 @@
 
 Recording my coding practice routine :rocket:
 
+### 2020.5.5
+
+leetcode: `Math`
+
+- [633. Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers) :star:
+
+  - Two Pointers Solution: watch out for the int overflow
+  - HashSet
+  - a natural number is a sum of two squares if and only if each prime factor that's 3 modulo 4 occurs to an even power in the number's prime factorization. [link](https://leetcode.com/problems/perfect-squares/discuss/71533/osqrtn-in-ruby-c-c)
+
+- [537. Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication)
+
+  - String manipulation
+
+- [367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square)
+
+  - Newton Method
+  - Binary Search
+
+- [204. Count Primes](https://leetcode.com/problems/count-primes):star:
+
+  - prune out cases
+
+    ```
+    int countPrimes(int n) {
+            if (n<3) return 0;
+            vector<int> isPrime(n+1, 1);
+            int count = 1;
+            for (int i=3; i<n; i+=2){
+                if (isPrime[i]==1) {
+                    count++;
+                    for (int j = i; j<=n/i; j+=2) isPrime[j*i] = 0;
+                }
+            }
+            return count;
+        }
+    ```
+
+- [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)
+- [233. Number of Digit One](https://leetcode.com/problems/number-of-digit-one) :star:
+
 ### 2020.5.3
 
 - [462. Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii)
